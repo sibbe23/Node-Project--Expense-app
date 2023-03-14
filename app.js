@@ -9,7 +9,7 @@ const cors = require('cors');
 const userRoutes = require('./routes/userroute')
 app.use(bodyParser.json({ extended: true }));
 app.use(cors())
-app.use('/',userRoutes)
+app.use('/user',userRoutes)
 
 sequelize.sync().then(res=>{
     app.listen(3000);

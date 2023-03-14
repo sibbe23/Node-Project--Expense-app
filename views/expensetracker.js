@@ -15,7 +15,7 @@ function signup(e){
 
     console.log(userDetails)
 
-    axios.post('http://localhost:3000/user',userDetails)
+    axios.post('http://localhost:3000/user/signup',userDetails)
     .then(result=>{
         console.log(result)
     })
